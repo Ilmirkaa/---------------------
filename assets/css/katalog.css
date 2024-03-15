@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Jura", sans-serif;
+    transition: .3s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* шапка сайта */
+
+header {
+    background-color: #000000be;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.fa-solid.fa-bars {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.header_logo h1 {
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: rgb(148, 148, 148);
+}
+
+.header_icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* katalog */
+
+.hleb_sec {
+    padding-bottom: 40px;
+}
+
+.hleb_krosh a {
+    color: #6e6e6e;
+    font-size: 18px;
+}
+
+.nazad {
+    display: none;
+    background-color: transparent;
+    border: 1px solid #000000;
+    padding: 10px;
+    color: #000000;
+    font-size: 20px;
+    width: 100px;
+   margin-bottom: 30px;
+
+}
+
+.hleb_krosh a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.katalog_content {
+    padding: 70px 0;
+}
+
+.filter {
+    margin-top: 20px;
+    border: 1px solid #000000;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.katalog_content h2 {
+    font-size: 24px;
+}
+
+.tovar_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 60px;
+
+}
+
+.tovar_items img {
+    width: 300px;
+    height: 450px;
+}
+
+.tovar_items img:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.tovar_item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tovar_item p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.kor {
+    background-color: transparent;
+    border: 1px solid #000000;
+    padding: 12px;
+    color: #000000;
+    font-size: 20px;
+
+}
+
+.kor:hover {
+    background-color: #3d3d3d;
+    color: white;
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+/* футер */
+
+footer {
+    background-color: #000000be;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 100px;
+    padding-top: 30px;
+}
+
+.footer_icons img {
+    width: 60px;
+}
+
+.footer_icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer_text {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+hr {
+    width: 1870px;
+    margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+    nav a {
+        display: none;
+    }
+
+    .header_logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .header_logo h1 {
+        color: white;
+        font-size: 25px;
+    }
+
+    
+
+    .header_icons {
+        display: none;
+    }
+    
+    .fa-solid.fa-bars {
+        display: block;
+    }
+
+    .hleb_sec {
+        display: none;
+    }
+
+    .nazad {
+        display: block;
+        margin-left: 40px;
+    }
+
+    .katalog_content h2 {
+        margin-left: 40px;
+    }
+
+    .filter {
+        margin-left: 40px;
+    }
+
+    
+}
+
+
+   
+
+@media (max-width: 1400px) {
+    .footer_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 30px;
+    } .tovar_items {
+            flex-wrap: wrap;
+        }
+
+        .tovar_items img {
+            width: 300px;
+            height: 450px;
+        }
+}
+
+   
+   
+
+
+
